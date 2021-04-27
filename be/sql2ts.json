@@ -1,0 +1,11 @@
+{
+  "client": "sqlite",
+  "connection": {
+    "filename": "./db.sqlite"
+  },
+  "filename": "DbTypes",
+  "folder": "src/db/types",
+  "interfaceNameFormat": "${table}Db",
+  "tableNameCasing": "camel",
+  "columnNameCasing": "camel"
+}

@@ -1,0 +1,48 @@
+{
+  "boards": [
+    {
+      "id": 0,
+      "name": "Prvý Board",
+      "lists": [
+        {
+          "id": 0,
+          "name": "TODO",
+          "items": [
+            {
+              "id": 0,
+              "name": "Absolvovať pohovor"
+            },
+            {
+              "id": 1,
+              "name": "Podpísať zmluvu"
+            },
+            {
+              "id": 2,
+              "name": "Nastúpiť do práce"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "name": "In Progress",
+          "items": [
+            {
+              "id": 4,
+              "name": "Urobiť skúšobný príklad"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Done",
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Druhý board",
+      "lists": []
+    }
+  ]
+}

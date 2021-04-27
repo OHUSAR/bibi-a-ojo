@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "types": ["node", "@types/jest"],
+    "baseUrl": "./src",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["./src", "./tests"],
+  "exclude": ["node_modules", "**/node_modules/*"]
+}
