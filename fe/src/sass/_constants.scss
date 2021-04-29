@@ -1,0 +1,20 @@
+$ebony: #6b705c;
+$artichoke: #a5a58d;
+$ashGravy: #b7b7a4;
+$champagnePink: #ffe8d6;
+$desertSand: #ddbea9;
+$antiqueGrass: #cb997e;
+
+$colors: ($ebony, $ashGravy, $artichoke, $desertSand);
+
+@mixin colorize {
+  @for $i from 1 through length($colors) {
+    &:nth-child(#{length($colors)}n + #{$i}) {
+      background: nth($colors, $i);
+
+      .item:hover {
+        background: nth($colors, length($colors) - $i + 1);
+      }
+    }
+  }
+}

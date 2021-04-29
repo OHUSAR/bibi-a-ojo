@@ -1,0 +1,27 @@
+@import "../../sass/constants.scss";
+
+.list {
+  width: 25%;
+  margin-right: 20px;
+  padding: 25px 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  @include colorize();
+}
+
+.listName {
+  font-weight: 800;
+  font-size: 1.75rem;
+
+  color: $champagnePink;
+  text-decoration: underline;
+}
+
+.items {
+  width: 100%;
+  margin-top: 20px;
+
+  cursor: pointer;
+}

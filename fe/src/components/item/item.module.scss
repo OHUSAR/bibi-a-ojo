@@ -1,0 +1,21 @@
+@import "../../sass/constants.scss";
+
+.item {
+  width: 100%;
+  height: 100px;
+  padding: 0 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  word-break: break-all;
+
+  color: $champagnePink;
+  background-color: $antiqueGrass;
+}
