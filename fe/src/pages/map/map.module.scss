@@ -1,0 +1,58 @@
+@import "../../sass/constants.scss";
+
+.map {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+}
+
+.mapPart {
+  position: relative;
+}
+
+.div {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border: 2px solid $red;
+
+  position: absolute;
+}
+
+.img {
+  width: 176px;
+  height: 176px;
+  object-fit: cover;
+}
+
+.info {
+  position: absolute;
+
+  width: 375px;
+  height: 200px;
+  padding: 5px 5px 5px 20px;
+
+  .title {
+    font-size: 2rem;
+    font-weight: 600;
+
+    color: $red;
+  }
+
+  .website {
+    color: $green;
+  }
+
+  .price {
+    color: $grey;
+  }
+}
+
+.distance {
+  position: absolute;
+
+  font-weight: 600;
+}

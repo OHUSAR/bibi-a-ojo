@@ -1,35 +1,26 @@
 @import "../../sass/constants.scss";
 
-
-h1 {
-  font-size: 6rem;
-  font-weight: 600;
-
-  color: $red;
-
-  margin: 10px 0;
+.wrapper,
+.wrapper2,
+.wrapper3 {
+  width: 100%;
+  padding: 40px 0;
 }
 
-.header {
-  position: relative;
+.wrapper {
+  background: $cream;
+}
+
+.wrapper2 {
+  background: white;
+}
+
+.wrapper3 {
+  height: 300px;
 
   display: flex;
-  flex-direction: column;
-
+  justify-content: center;
   align-items: center;
-}
 
-.secondaryTitle {
-  font-size: 3rem;
-  font-weight: 600;
- }
-
-.tree {
-  z-index: -1;
-
-  height: 500px;
-
-  position: absolute;
-  left: -50px;
-  top: -30px;
+  background: $red;
 }

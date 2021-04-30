@@ -1,0 +1,78 @@
+@import "../../sass/constants.scss";
+
+.header {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h1 {
+  z-index: 1;
+  margin: 0;
+
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.image {
+  display: flex;
+  width: 55%;
+  object-fit: cover;
+}
+
+.text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  margin-top: 110px;
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $grey;
+
+    color: $grey;
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: "Noto Serif";
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.secondaryTitle {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.tree {
+  z-index: 0;
+
+  height: 560px;
+
+  position: absolute;
+  right: -300px;
+  top: -30px;
+
+  transform: scaleX(-1);
+}

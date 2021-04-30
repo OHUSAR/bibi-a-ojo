@@ -1,17 +1,23 @@
 import React from "react";
 
-import { ReactComponent as TreeImg } from "../../images/tree.svg";
-
 import styles from "./home.module.scss";
+import WeddingMap from "../map";
+import Header from "../header";
 
-const Home = () => {
+const Home: React.VFC = () => {
   return (
-    <div className={styles.header}>
-      <div className={styles.secondaryTitle}>- 14. 8. 2021 -</div>
-      <h1>Barbora & Ondrej</h1>
-      <div className={styles.secondaryTitle}>Sa budu brat!</div>
-      <TreeImg className={styles.tree} />
-    </div>
+    <>
+      <div className={styles.wrapper}>
+        <Header />
+      </div>
+
+      <div className={styles.wrapper2}>
+        <WeddingMap />
+      </div>
+      <footer className={styles.wrapper3}>
+        <button>Nemozem dojst</button>
+      </footer>
+    </>
   );
 };
 
