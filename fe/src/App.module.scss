@@ -1,15 +1,17 @@
 @import "./sass/constants.scss";
 
 body {
-  background: $champagnePink;
+  background: $cream;
 }
 
-h1 {
-  font-size: 3rem;
-  font-weight: 800;
-
-  color: $ebony;
+* {
+  font-family: 'Noto Serif';
 }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Jost';
+}
+
 
 .app {
   max-width: 1280px;

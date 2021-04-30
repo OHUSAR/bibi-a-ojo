@@ -1,44 +1,35 @@
 @import "../../sass/constants.scss";
 
-.boards {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.board {
-  width: 24%;
-  height: 100px;
-  margin: 1% 0.5% 0;
-  border-radius: 5px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 2rem;
+h1 {
+  font-size: 6rem;
   font-weight: 600;
-  text-decoration: none;
 
-  color: $champagnePink;
-  background: $ebony;
+  color: $red;
 
-  &:hover {
-    background: linear-gradient(to right, $ebony, $desertSand);
-  }
-
-  &:nth-child(odd) {
-    background-color: $antiqueGrass;
-
-    &:hover {
-      background: linear-gradient(to right, $antiqueGrass, $desertSand);
-    }
-  }
+  margin: 10px 0;
 }
 
-.input {
-  width: 24% !important;
-  height: 100px !important;
-  margin: 1% 0.5% 0 !important;
+.header {
+  position: relative;
 
-  border-color: $antiqueGrass !important;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.secondaryTitle {
+  font-size: 3rem;
+  font-weight: 600;
+ }
+
+.tree {
+  z-index: -1;
+
+  height: 500px;
+
+  position: absolute;
+  left: -50px;
+  top: -30px;
 }
