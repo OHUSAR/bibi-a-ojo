@@ -1,5 +1,9 @@
 @import "./sass/constants.scss";
 
+:root {
+  --app-height: 100%;
+}
+
 body {
   background: $cream;
   overflow: hidden;

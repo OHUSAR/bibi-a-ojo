@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import {
 //   ApolloProvider,
@@ -23,6 +23,20 @@ import "./App.scss";
 // });
 
 function App() {
+  useEffect(() => {
+    const appHeight = () => {
+      const doc = document.documentElement;
+      doc.style.setProperty("--app-height", `${window.innerHeight}px`);
+    };
+
+    window.addEventListener("resize", appHeight);
+    appHeight();
+
+    return () => {
+      window.removeEventListener("resize", appHeight);
+    };
+  }, []);
+
   return (
     <Router>
       <Switch>
