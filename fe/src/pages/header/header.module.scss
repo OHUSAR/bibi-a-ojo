@@ -1,51 +1,105 @@
 @import "../../sass/constants.scss";
 
 .header {
-  max-width: 1280px;
+  min-height: 100vh;
+  max-width: $maxWidthMobile;
   width: 100%;
   margin: 0 auto;
+  padding: 20px;
 
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+
+  background-image: url("../../images/tree.png");
+  background-size: 80vh;
+  background-repeat: no-repeat;
+  background-position: bottom -50px right -100px;
+
+  @media #{$desktop} {
+    max-width: $maxWidthDesktop;
+    min-height: auto;
+    padding: 40px 0;
+
+    background-position: bottom -15px right -120px;
+  }
+}
+
+.topPart {
 }
 
 h1 {
   z-index: 1;
   margin: 0;
 
-  font-size: 6rem;
-  font-weight: 700;
   line-height: 1;
-}
+  font-size: $h1FontSizeMobile;
+  font-weight: $h1FontWeight;
 
-.image {
-  display: flex;
-  width: 55%;
-  object-fit: cover;
+  div {
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+    font-family: "Noto Serif";
+  }
+
+  @media #{$desktop} {
+    font-size: $h1FontSize;
+  }
 }
 
 .text {
-  width: 40%;
+  max-width: 65%;
+  margin-top: 30px;
+  color: $grey;
+  font-size: $fontSizeMobile;
+
+  @media #{$desktop} {
+    max-width: 100%;
+    font-size: $fontSize;
+  }
+}
+
+.bottomPart {
+  max-width: 80%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+
+  @media #{$desktop} {
+    margin-top: 50px;
+  }
+}
+
+.info {
+  color: $grey;
+
+  font-size: $fontSizeMobile;
+
+  @media #{$desktop} {
+    font-size: $fontSize;
+  }
 }
 
 .date {
-  margin-top: 110px;
-  width: min-content;
+  margin-right: 20px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
 
+  @media #{$desktop} {
+    margin-right: 50px;
+  }
+
   div {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     border-bottom: 1px solid $grey;
 
     color: $grey;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 600;
     font-family: "Noto Serif";
 
@@ -57,6 +111,10 @@ h1 {
       border-bottom: 0;
       padding-bottom: 0;
     }
+
+    @media #{$desktop} {
+      font-size: 2.5rem;
+    }
   }
 }
 
@@ -66,13 +124,8 @@ h1 {
 }
 
 .tree {
-  z-index: 0;
-
-  height: 560px;
-
   position: absolute;
-  right: -300px;
-  top: -30px;
 
-  transform: scaleX(-1);
+  z-index: 0;
+  height: 560px;
 }

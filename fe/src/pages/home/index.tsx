@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "./home.module.scss";
-import WeddingMap from "../map";
+import Accomodattions from "../accomodation";
 import Header from "../header";
 
 const Home: React.VFC = () => {
@@ -12,7 +12,7 @@ const Home: React.VFC = () => {
       </div>
 
       <div className={styles.wrapper2}>
-        <WeddingMap />
+        <Accomodattions />
       </div>
       <footer className={styles.wrapper3}>
         <button>Nemozem dojst</button>

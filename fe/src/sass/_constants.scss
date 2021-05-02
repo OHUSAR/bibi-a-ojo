@@ -1,10 +1,23 @@
-
 $cream: #eae3d8;
 $red: #c47865;
 $green: #85987a;
 $grey: #6e686a;
 
 $colors: ($cream, $red, $green, $grey);
+
+$maxWidthDesktop: 1024px;
+$maxWidthMobile: 100%;
+
+$breakpoint: 1024px;
+$desktop: "(min-width: #{$breakpoint})";
+
+$h1FontSizeMobile: 4rem;
+$h1FontSize: 5rem;
+$h1FontWeight: 700;
+
+$fontSizeMobile: 1rem;
+$fontSize: 1.5rem;
+$fontWeight: 400;
 
 @mixin colorize {
   @for $i from 1 through length($colors) {
