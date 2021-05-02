@@ -2,6 +2,7 @@
 
 .header {
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   max-width: $maxWidthMobile;
   width: 100%;
   margin: 0 auto;
