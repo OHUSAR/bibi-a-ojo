@@ -14,9 +14,7 @@ const Home: React.VFC = () => {
       <div className={styles.wrapper2}>
         <Accomodattions />
       </div>
-      <footer className={styles.wrapper3}>
-        <button>Nemozem dojst</button>
-      </footer>
+      <footer className={styles.wrapper3}>Bibi & Ojo</footer>
     </>
   );
 };
