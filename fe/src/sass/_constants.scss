@@ -11,7 +11,11 @@ $maxWidthMobile: 100%;
 $breakpoint: 1024px;
 $desktop: "(min-width: #{$breakpoint})";
 
-$h1FontSizeMobile: 4rem;
+$iphone8Height: 670px;
+$biggerThanIphone8: "(min-height: #{$iphone8Height})";
+
+$h1FontSizeMobile: 3rem;
+$h1FontSizeBigMobile: 4rem;
 $h1FontSize: 5rem;
 $h1FontWeight: 700;
 
