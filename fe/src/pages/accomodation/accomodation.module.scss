@@ -44,7 +44,7 @@
 
 .accomodation {
   width: 100%;
-  margin-top: 20px;
+  margin-bottom: 40px;
 
   display: flex;
   flex-direction: column;
@@ -69,7 +69,10 @@
 .info {
   width: 100%;
   padding: 5px;
-  min-height: 180px;
+
+  @media #{$desktop} {
+    min-height: 180px;
+  }
 
   .title {
     font-size: 1.7rem;
@@ -114,6 +117,7 @@
 
 .btn {
   width: 100%;
+  margin-top: 10px;
   padding: 10px;
   border: none;
   background: none;
@@ -130,4 +134,9 @@
 
   color: white;
   background: $green;
+
+  @media #{$desktop} {
+    margin-top: 0;
+  }
+
 }

@@ -27,7 +27,7 @@ const Accomodation: React.FC<AccomodationProps> = (props) => {
       <div className={styles.info}>
         <div className={styles.title}>{name}</div>
         {url ? (
-          <a className={styles.website} href={url}>
+          <a className={styles.website} href={`//${url}`}>
             {url}
           </a>
         ) : null}
@@ -110,7 +110,7 @@ const Accomodations: React.FC = (props) => {
             </>
           }
           distance="4.2 km (4 min)"
-          url="https://www.penzionpodtureckom.com/"
+          url="www.penzionpodtureckom.com"
         />
         <Accomodation
           name={"Hotel Diana"}
@@ -124,7 +124,7 @@ const Accomodations: React.FC = (props) => {
             </>
           }
           distance="10.5 km (12 min)"
-          url="http://www.hotel-diana.sk/index.php"
+          url="www.hotel-diana.sk"
         />
       </div>
     </>
