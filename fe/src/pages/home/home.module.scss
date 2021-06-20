@@ -2,7 +2,12 @@
 
 .wrapper,
 .wrapper2,
-.wrapper3 {
+.wrapper3,
+.wrapper4,
+.wrapper5,
+.wrapper6,
+.wrapper7,
+.wrapper8 {
   width: 100%;
 }
 
@@ -15,6 +20,20 @@
 }
 
 .wrapper3 {
+  background: $cream;
+}
+.wrapper4 {
+}
+.wrapper5 {
+  background: $cream;
+}
+.wrapper6 {
+}
+.wrapper7 {
+  background: $cream;
+}
+
+.wrapper8 {
   height: 50px;
 
   display: flex;

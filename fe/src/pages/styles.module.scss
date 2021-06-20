@@ -1,0 +1,97 @@
+@import "../sass/constants.scss";
+
+.sectionInfo {
+  width: 100%;
+  max-width: $maxWidthMobile;
+  margin: 0 auto;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: $fontSizeMobile;
+
+  @media #{$desktop} {
+    padding: 40px 0;
+    max-width: $maxWidthDesktop;
+    font-size: $fontSize;
+  }
+}
+
+.h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  color: $red;
+  font-size: 2rem;
+}
+
+.item {
+  max-width: $maxWidthMobile;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  border-radius: 10px;
+
+  @media #{$desktop} {
+    max-width: $maxWidthDesktop;
+    padding: 20px 40px;
+  }
+
+  background-color: $cream;
+}
+
+.itemTitle {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  .red {
+    color: $red;
+  }
+  h6 {
+    padding: 0 40px;
+  }
+}
+
+.columns {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  flex-direction: column;
+
+  @media #{$desktop} {
+    flex-direction: row;
+  }
+}
+
+.column {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @media #{$desktop} {
+    width: calc(50% - 10px);
+    margin-bottom: 0;
+  }
+
+  label,
+  p {
+    background-color: $red !important;
+  }
+}
+
+.timeline {
+  label,
+  p {
+    background-color: $red !important;
+  }
+}
+
+.noncenter {
+  width: 100%;
+}
